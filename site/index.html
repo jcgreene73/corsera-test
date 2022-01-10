@@ -3,10 +3,110 @@
 <head>
 <meta charset="UTF-8">
 <title>Hello Coursera</title>
+	<link rel="stylesheet" href="home_css.css">
 </head>
-
+	
 <body>
-	<h1>Hello Coursera Heading</h1>
+	
+<header>
+		<h1>Hello Coursera Heading</h1>
+	<ul>
+	<li><a href="#splash1">Splash Heading</a></li>
+		<li><a href="#boilerplate1">Boiler Plate Section</a></li>
+		<li><a href="#lists1">Lists</a></li>
+		<li><a href="#escaped-characters">Escaped Characters &amp; examples</a></li>
+		<li><a href="#links">Links</a></li>
+		<li><a href="#commenting-out">Commenting Items Out</a></li>
+		<li><a href="#images">Images</a></li>
+		<li><a href="#css">CSS</a></li>
+	</ul>
+</header>
+	
+	<section id="splash1">
 	<b1>It's a great course!</b1>
+	<div1>New portion</div1>
+		<article>More text but different location</article>
+	</section>
+	
+	<section id="boilerplate1">
+	<h2>This is a new section title in a new page section</h2>
+		<p1>It contains more content related to the web page</p1>
+	</section>
+	
+	<section id="lists1">
+	<h3>Unordered Lists &amp; Unordered sub litst</h3>
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3 with sub items</li>
+		<ul>
+		<li>Sub item 1</li>
+		<li>Sub item 2</li>
+		</ul>
+		<li>Item 4</li>
+		</ul>
+		
+		<h3>Ordered Lists &amp; Ordered sub lists</h3>
+		<ol>
+			<li>Step 1</li>
+			<li>Step 2</li>
+			<li>Step 3 has sub steps</li>
+			<ol>
+			<li>Sub step 1</li>
+			<li>Sub step 2</li>
+			<li>Sub step 3</li>
+			</ol>
+			<li>Step 4</li>
+		</ol>
+	</section>
+	
+	<section id="escaped-characters">
+		<h3>Escaped characters and avoiding them</h3>
+		<div>1 is &lt; 2 &amp; 2 is &gt; 1</div>
+		<div1>For &lt; use <span style="color:red">&amp;lt;</span>. For &gt; use <span style="color:red">&amp;gt;</span>. For &amp; use <span style="color:red">&amp;amp;</span>.</div1>
+	</section>
+	
+	<section id="links">
+	<h3>Links</h3>
+		<div2>Interal links</div2>
+		<div2>href links to other files pages and sites. They link to other files in the same directory or other sites via URL. you reference it by using &lt;a href="File-name-in-directory.term" title="title for item"&gt;&lt;/a&gt;.</div2>
+		<a href="page1.html" title="example-page1">This is a link to an example page in the same directory.</a>
+		<a href="page1.html" title="example-page1"><div>You can also use a div tag to shift the text down. Just add the div tag between the a tags</div></a>
+		
+		<div2>Here is an example of an external link. You reference it with &lt;a href="http/https://site-url.xyz" target="target" title="title-of-item"&gt;&lt;/a&gt;.</div2>
+		<a href="https://www.blueridgebiscuitcompany.com" target="_blank" title="Blue Ridge Biscuit Home Page">Here is an example using the Blue Ridge Biscuit Company Home Page. You can also use div tags to break the line.</a>
+		
+		<div3>You can also link to sections. I have a reference at the top of the page to jump between sections. You reference it with &lt;a href="#section-title"&gt;&lt;/a&gt;</div3>
+	</section>
+	
+	<section id="commenting-out">
+		<h3>Commenting items in HTML</h3>
+	<div2>You can comment items out using html. You do so using &lt;!-- ALL THE TAGS AND TEXT TO BE COMMENTED OUT --&gt;. I've commented an item out in the html code to demonstrate.</div2>
+		<!-- <p>TEXT TEXT TEXT Lorem Ipsum something something</p> -->
+	</section>
+	
+	<section id="images">
+		<h3>Images</h3>
+		<p>
+			<img src="image_1.jpg" width="315" height="200" alt="picture_and_quote"> &quot;Here is an example of an image with a quote. You can add this using &lt;img src="image source url or file link.term" width="X" height="Y" alt="title name"&gt; &amp;quot;Text in the quote.&amp;quot; You can also just add an image without a quote. I didn't add it as it would have been repetitive. Just remove the quot tags.&quot;
+		
+		</p>
+		
+	</section>
+	
+	<section id="css">
+		<h2>CSS Styling</h2>
+	<div2>css is styling for a website. You embed it in the HTML code or you can link it as an external file to the website. To link it, add a tag in the head section, &lt;link rel="stylesheet" href="the css file to link.css"&gt;.</div2>
+		<p>CSS is composed of elements, classes and id selectors. You specify the tag to apply to by just defining the tag name &#40;i.e. "p" for paragraph tags, "div" for div tags&#41;. This allows you to then define arguments about styling for the tag selected. An example would be "p &#123; color: blue; &#125;". This would style all of the "p" elements to have blue text.</p>
+		<div2>Class selectors allow you to style certain pieces only as opposed to the whole document. You add the class identifier to the html tag then you add the class styling to the css document. An example would be "&lt;p class="red"&gt;Text that would be red&lt;/p&gt;" in the html document, then ".red &#123; color: red; &#125;" in the css document. A class is ALWAYS defined with a dot before the name in the CSS document.</div2>
+		<p>You can also stlye items based off of their ID in the HTML document. You do so by adding a selector of #id_name in the CSS document. An example would be "#splash &#123; color: green; &#125;". This will color the text of anything with the id "splash" to green.</p>
+		<p>Lastly, you can group selectors for efficiency. Add a "," after the first selector then add the next selector.</p>
+		
+	</section>
+		
+<footer>
+
+</footer>
 </body>
+
 </html>
