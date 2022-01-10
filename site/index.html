@@ -101,7 +101,13 @@
 		<div2>Class selectors allow you to style certain pieces only as opposed to the whole document. You add the class identifier to the html tag then you add the class styling to the css document. An example would be "&lt;p class="red"&gt;Text that would be red&lt;/p&gt;" in the html document, then ".red &#123; color: red; &#125;" in the css document. A class is ALWAYS defined with a dot before the name in the CSS document.</div2>
 		<p>You can also stlye items based off of their ID in the HTML document. You do so by adding a selector of #id_name in the CSS document. An example would be "#splash &#123; color: green; &#125;". This will color the text of anything with the id "splash" to green.</p>
 		<p>Lastly, you can group selectors for efficiency. Add a "," after the first selector then add the next selector.</p>
-		
+	</section>
+	
+	<section id="elements_with_other_selectors">
+		<p>An element with a class selector that has a CSS definition will change how the element is styled. This will add a new definition for ONLY that element when it has ONLY that class selected. You add it by using "tag.class" in the CSS document then by using "&lt;tag class="class tag"&gt;".</p>
+		<p>You can also have a child selector, which will apply only when the child tag is present in the parent tag. An example, "article &gt; p". This will only apply when the child is a direct child of an element</p>
+		<p>You could also have a descendant selector. In this case, any time the descendant is present, it will apply the style. An example, "article p". In this example, all "p" tags within an "article" tag will be styled, regardless of parent order.</p>
+		<p>This applies to ALL selector types.</p>
 	</section>
 		
 <footer>
