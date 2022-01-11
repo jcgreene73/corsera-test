@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1 {
+	color: cadetblue;
+	width: 600;
+	text-align: center;
+	
+}
+
+p a:link {
+	text-decoration: none;
+	background-color: burlywood;
+	border: 3px #226168;
+	color: black;
+	display: block;
+	width: 50px;
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+p a:visited {
+	text-decoration: none;
+	background-color: burlywood;
+	border: 3px #226168;
+	color: black;
+	display: block;
+	width: 50px;
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+p a:hover {
+	background-color: aqua;
+	color: gray;
+}
+
+p a:visited {
+	background-color: aqua;
+	color: gray;
+}
