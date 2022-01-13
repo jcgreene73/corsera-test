@@ -11,7 +11,7 @@
 <header>
 		<h1>Hello Coursera Heading</h1>
 	<ul>
-	<li><a href="#splash1">Splash Heading</a></li>
+		<li><a href="#splash1">Splash Heading</a></li>
 		<li><a href="#boilerplate1">Boiler Plate Section</a></li>
 		<li><a href="#lists1">Lists</a></li>
 		<li><a href="#escaped-characters">Escaped Characters &amp; examples</a></li>
@@ -19,6 +19,8 @@
 		<li><a href="#commenting-out">Commenting Items Out</a></li>
 		<li><a href="#images">Images</a></li>
 		<li><a href="#css">CSS</a></li>
+		<li><a href="#elements_with_other_slectors">Elements and extra selectors</a></li>
+		<li><a href="#pseudo_selectors">Pseudo Slectors</a></li>
 	</ul>
 </header>
 	
@@ -101,6 +103,7 @@
 		<div2>Class selectors allow you to style certain pieces only as opposed to the whole document. You add the class identifier to the html tag then you add the class styling to the css document. An example would be "&lt;p class="red"&gt;Text that would be red&lt;/p&gt;" in the html document, then ".red &#123; color: red; &#125;" in the css document. A class is ALWAYS defined with a dot before the name in the CSS document.</div2>
 		<p>You can also stlye items based off of their ID in the HTML document. You do so by adding a selector of #id_name in the CSS document. An example would be "#splash &#123; color: green; &#125;". This will color the text of anything with the id "splash" to green.</p>
 		<p>Lastly, you can group selectors for efficiency. Add a "," after the first selector then add the next selector.</p>
+		<p>Aswell, in CSS, the last declaration before the tag wins. If you only have a CSS sheet linked, that will take precedence. If you add a style tag to an HTML tag in the HTML doc, it will take precedence over the CSS sheet.</p>
 	</section>
 	
 	<section id="elements_with_other_selectors">
@@ -110,6 +113,28 @@
 		<p>This applies to ALL selector types.</p>
 	</section>
 		
+	<section id="pseduo_selectors">
+		<h2>Pseudo Class Selectors</h2>
+	<p>A pseudo-class selector can be defined within a preexisting selector followed by a colon then a known pseudo selector.</p>
+		<ul>
+			<li>
+		<p><a href="https://google.com">This link is affected</a></p>
+			</li>
+		</ul>
+	</section>
+	
+	<section id="box_model">
+		<h2>The Box Model</h2>
+	<div id="box1">
+		This is the box.
+		<div id="content1">
+			<h2 class="content1">In this box is a title for the section.</h2>
+		This is the content that is contained within the box of a website. <p>You create a box by adding padding and borders in the CSS sheet for the box and border id's and classes.</p>
+			<p>You can make boxes in pretty much any size that you want. Just remember how you're formatting the content within the box as that will help you with the size for the box.</p>
+		</div>
+		</div>
+	</section>
+	
 <footer>
 
 </footer>
