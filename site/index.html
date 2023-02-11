@@ -135,6 +135,56 @@
 		</div>
 	</section>
 	
+	<section id="background1">
+	<div class="bg1">This is some content in front of a background.
+		<h2>Of course, you have to give it enough space to spread the image out.</h2></div>
+	</section>
+	
+	<section id="columns">
+		<div class="bg2">
+		<h2>2 column layout</h2>
+		<div class="c1">This text will be in column 1.</div>
+		<div class="c2">This text will be in column 2.</div>
+		</div>
+	</section>
+	
+	<section id="media_queries">
+	<h2>Media Queries</h2>
+		<p>When using media queries, be casreful not to overlap ranges, otherwise all defined ranges will apply.</p>
+		<a href="media_queries.html" title="Queries">This page has some media queries on it.</a>
+		<p>You can drag the page around to see the 2 blocks on the screen adjust in size based on the pixel count of the browser.</p>
+		<p>Remember not to overlap the breakpoints in media queries.</p>
+	</section>
+	
+	<section id="responsive_layout">
+		<h2>Responsive Design</h2>
+	<p>Content should be like water, whatever you put it into, it should assume the space of what it's put into.</p>
+		<p>A responsive website is a site that is designed to adapr its layout to the viewing environment by using fluid proportionbased grids, flexible images, and CSS3 media queries.</p>
+		<h4>What does this mean?</h4>
+		<ul>
+		<li>The sites layout should adapt to the size of the devices that it's being displayed on.</li>
+		<li>Content verbosity/visual delivery will &#40;most likely&#41; change to adapt to the device.</li>
+			<li>Some content may even be hidden based on the platform accessing the site.</li>
+		</ul>
+		<p>Layout is the largest part of responsive design. The most common type of responsive design is the 12 column design, as defined by the Twitter Bootstrap. This is because 12 allows for a decent split across the webpage. It devides into 1, 2, 3, 4, 6, and 12. It also allows you to split the elements up in other amounts. 9 and 3, 8 and 4, 6 3 and 3, 4 4 2 and 2, etc.</p>
+		<p>The browser window is 100%. This allows you to calculate what the percent of 1 column would be. In 12 column, this is 8.33% per column.</p>
+		<p>You're also not limited to having only the main grid. You can have nested grids. This allows you to sub-devide the page in to grid sections, then treat those as the 100%. This allows you to do things like devide the page into 4 4 and 4, the sub dived into 6 and 6, 3 3 3 and 3, and 4 4 and 4.</p>
+		<a href="responsive.html">Here is a page with some responsive design.</a>
+		<p>The content on this page is not my own, however, it provides a great reference for how to structure a responsive site as well as a great html reference for how to build it and how it should look, including meta tags to define the width parameters for the site based on the device.</p>
+	</section>
+	
+	<section>
+	<h2>Twitter Bootstrap</h2>
+		<p>Twitter bootstrap is the most popular web frame work for web platforms. It has an emphisis on mobile device pages and provides a simple setup for web pages. The emphisis on mobile makes it so you design your site for a mobile platform first then design it for a desktop.</p>
+		<a href="tbs.html" target="_blank" title="Twitter Boot Strap">This page is using the twitter boot strap to load.</a>
+	</section>
+	
+	<section>
+		<h2>Bootstrap Grid System</h2>
+		<p>The easiest way to create a responsive layout is by using a grid system. Any bootstrap layout will be comprised of a few div components, typically classed into the row and columns.</p>
+		<p>The bootstrap grid MUST ALWAYS be inside container wrapper. You can use the container class or the container-fluid class. The container-fluid class stretches the layout the full width of the browser and provides a consistant padding around the content. Regular container class has pre-defined fixed width that is still responsive to the width of the browser.</p>
+		<p>The next component of the grid is the row. It creats the hroizontal groups of columns, which means the columns interact as a group but also act separatley from other columns. It also applies a negative margine to the left and right of content, which helps to counteract the padding setup by the container class. Each column has it's own padding. If negative padding wasn't applied to the row, the padding of the container would be added to the padding of the column.</p>
+	</section>
 <footer>
 
 </footer>
